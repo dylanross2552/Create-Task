@@ -1,0 +1,8 @@
+Variable Names
+
+bk1 = Black Knight 1
+wk1 = White Knight 1
+bk2 = Black Knight 2
+wk2 = White Knight 2
+bk3 = Black Knight 3
+wk3 = White Knight 3
