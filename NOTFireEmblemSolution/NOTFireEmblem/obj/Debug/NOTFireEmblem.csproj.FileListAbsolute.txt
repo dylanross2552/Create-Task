@@ -1,0 +1,35 @@
+C:\Users\Mullin\Desktop\Alex Mullin\Related\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.exe.config
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.exe.config
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.exe
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.pdb
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.csprojResolveAssemblyReference.cache
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.Titlescreen.resources
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.Properties.Resources.resources
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.csproj.GenerateResource.Cache
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.exe
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.pdb
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\BattleScreen.Designer.cs
+C:\Users\Mullin\Desktop\Alex Mullin\Related\Create Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.BattleScreenTestArea.resources
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.exe.config
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.exe
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.pdb
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\BattleScreen.Designer.cs
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.exe
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.pdb
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.csprojResolveAssemblyReference.cache
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.BattleScreenTestArea.resources
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.Titlescreen.resources
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.Properties.Resources.resources
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.csproj.GenerateResource.Cache
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.exe.config
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.exe
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.pdb
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\BattleScreen.Designer.cs
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.exe
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\bin\Debug\NOTFireEmblem.pdb
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.csprojResolveAssemblyReference.cache
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.BattleScreenTestArea.resources
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.Titlescreen.resources
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.Properties.Resources.resources
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.csproj.GenerateResource.Cache
+C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.MapForm.resources
