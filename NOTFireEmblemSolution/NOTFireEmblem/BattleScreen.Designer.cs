@@ -63,13 +63,13 @@
             this.BattleActionsMenu = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.AttackButton = new System.Windows.Forms.Button();
+            this.ReviveButton = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.Wk2 = new System.Windows.Forms.PictureBox();
             this.Bk2 = new System.Windows.Forms.PictureBox();
             this.Wk3 = new System.Windows.Forms.PictureBox();
             this.Bk3 = new System.Windows.Forms.PictureBox();
             this.ServerLabel = new System.Windows.Forms.Label();
-            this.ReviveButton = new System.Windows.Forms.Button();
             this.TeamTurnLabel = new System.Windows.Forms.Label();
             this.P1ControlPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -513,6 +513,20 @@
             this.AttackButton.UseVisualStyleBackColor = true;
             this.AttackButton.Click += new System.EventHandler(this.AttackButton_Click);
             // 
+            // ReviveButton
+            // 
+            this.ReviveButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ReviveButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ReviveButton.BackgroundImage")));
+            this.ReviveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ReviveButton.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReviveButton.Location = new System.Drawing.Point(107, 3);
+            this.ReviveButton.Name = "ReviveButton";
+            this.ReviveButton.Size = new System.Drawing.Size(97, 35);
+            this.ReviveButton.TabIndex = 2;
+            this.ReviveButton.Text = "Revive";
+            this.ReviveButton.UseVisualStyleBackColor = true;
+            this.ReviveButton.Click += new System.EventHandler(this.ReviveButton_Click);
+            // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -573,20 +587,6 @@
             this.ServerLabel.TabIndex = 17;
             this.ServerLabel.Text = "20";
             this.ServerLabel.Visible = false;
-            // 
-            // ReviveButton
-            // 
-            this.ReviveButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ReviveButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ReviveButton.BackgroundImage")));
-            this.ReviveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ReviveButton.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReviveButton.Location = new System.Drawing.Point(107, 3);
-            this.ReviveButton.Name = "ReviveButton";
-            this.ReviveButton.Size = new System.Drawing.Size(97, 35);
-            this.ReviveButton.TabIndex = 2;
-            this.ReviveButton.Text = "Revive";
-            this.ReviveButton.UseVisualStyleBackColor = true;
-            this.ReviveButton.Click += new System.EventHandler(this.ReviveButton_Click);
             // 
             // TeamTurnLabel
             // 

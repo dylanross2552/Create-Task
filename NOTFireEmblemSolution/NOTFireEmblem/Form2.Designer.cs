@@ -1,6 +1,6 @@
-﻿namespace FireEmblemAmateurEdition
+﻿namespace NOTFireEmblem
 {
-    partial class Form2
+    partial class MapForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.bk3 = new System.Windows.Forms.Label();
             this.bk1 = new System.Windows.Forms.Label();
             this.map = new System.Windows.Forms.TableLayoutPanel();
@@ -95,7 +94,6 @@
             // bk3
             // 
             this.bk3.BackColor = System.Drawing.Color.White;
-            this.bk3.Image = ((System.Drawing.Image)(resources.GetObject("bk3.Image")));
             this.bk3.Location = new System.Drawing.Point(1, 306);
             this.bk3.Margin = new System.Windows.Forms.Padding(0);
             this.bk3.Name = "bk3";
@@ -108,7 +106,6 @@
             // 
             this.bk1.BackColor = System.Drawing.Color.White;
             this.bk1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bk1.Image = ((System.Drawing.Image)(resources.GetObject("bk1.Image")));
             this.bk1.Location = new System.Drawing.Point(1, 62);
             this.bk1.Margin = new System.Windows.Forms.Padding(0);
             this.bk1.Name = "bk1";
@@ -131,7 +128,7 @@
             this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
+            this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.map.Controls.Add(this.bk2, 0, 3);
             this.map.Controls.Add(this.label41, 4, 5);
             this.map.Controls.Add(this.label42, 3, 5);
@@ -200,7 +197,6 @@
             // 
             this.bk2.BackColor = System.Drawing.Color.White;
             this.bk2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bk2.Image = ((System.Drawing.Image)(resources.GetObject("bk2.Image")));
             this.bk2.Location = new System.Drawing.Point(1, 184);
             this.bk2.Margin = new System.Windows.Forms.Padding(0);
             this.bk2.Name = "bk2";
@@ -476,7 +472,6 @@
             // wk3
             // 
             this.wk3.BackColor = System.Drawing.Color.Gray;
-            this.wk3.Image = ((System.Drawing.Image)(resources.GetObject("wk3.Image")));
             this.wk3.Location = new System.Drawing.Point(367, 306);
             this.wk3.Margin = new System.Windows.Forms.Padding(0);
             this.wk3.Name = "wk3";
@@ -488,7 +483,6 @@
             // wk2
             // 
             this.wk2.BackColor = System.Drawing.Color.Gray;
-            this.wk2.Image = ((System.Drawing.Image)(resources.GetObject("wk2.Image")));
             this.wk2.Location = new System.Drawing.Point(367, 184);
             this.wk2.Margin = new System.Windows.Forms.Padding(0);
             this.wk2.Name = "wk2";
@@ -500,7 +494,6 @@
             // wk1
             // 
             this.wk1.BackColor = System.Drawing.Color.Gray;
-            this.wk1.Image = ((System.Drawing.Image)(resources.GetObject("wk1.Image")));
             this.wk1.Location = new System.Drawing.Point(367, 62);
             this.wk1.Margin = new System.Windows.Forms.Padding(0);
             this.wk1.Name = "wk1";
@@ -721,7 +714,6 @@
             // deselect
             // 
             this.deselect.BackColor = System.Drawing.Color.Firebrick;
-            this.deselect.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("deselect.BackgroundImage")));
             this.deselect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.deselect.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.deselect.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -742,7 +734,6 @@
             // Exit
             // 
             this.Exit.BackColor = System.Drawing.Color.Firebrick;
-            this.Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Exit.BackgroundImage")));
             this.Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Exit.FlatAppearance.BorderSize = 2;
@@ -762,7 +753,6 @@
             // endturn
             // 
             this.endturn.BackColor = System.Drawing.Color.MidnightBlue;
-            this.endturn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("endturn.BackgroundImage")));
             this.endturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.endturn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.endturn.FlatAppearance.BorderSize = 2;
@@ -854,8 +844,9 @@
             this.label50.TabIndex = 25;
             this.label50.UseWaitCursor = true;
             // 
-            // Form2
+            // MapForm
             // 
+            this.AccessibleName = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 467);
@@ -870,8 +861,9 @@
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.deselect);
             this.Controls.Add(this.map);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.KeyPreview = true;
+            this.Name = "MapForm";
+            this.Text = "Totally Not Fire Emblem";
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.map.ResumeLayout(false);

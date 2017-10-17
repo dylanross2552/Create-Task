@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FireEmblemAmateurEdition
+namespace NOTFireEmblem
 {
 
-    public partial class Form2 : Form
+    public partial class MapForm : Form
     {
         // the "b" and "w" and "bk" and wk" I use in many of my variables represent "black" "white" "black knight" "whiteknight" this is how I keep track of which knight I am using
         //how I detect if one of the knight has been clicked
@@ -48,7 +48,7 @@ namespace FireEmblemAmateurEdition
         public static Control labelnum;
 
 
-        public Form2()
+        public MapForm()
         {
             InitializeComponent();
         }
@@ -252,7 +252,7 @@ namespace FireEmblemAmateurEdition
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            BattleScreenTestArea frm2 = new BattleScreenTestArea();
         }
 
         public void highlight()
