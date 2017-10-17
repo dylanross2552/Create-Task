@@ -1,0 +1,12 @@
+Do away with turns
+
+Remove 4 of the Knights
+
+Remove the code for clicking the knights
+
+Have Dylan duplicate the status menus to his window
+
+Edit the revive and attack functions to switch back to the map screen
+
+insert a timer to govern the window and speed of events
+
