@@ -1,6 +1,7 @@
-Do away with turns 
+Do away with turns
  
-Remove 4 of the Knights 
+Remove 4 of the Knights
+	-EDIT: Just made them invisible for simplicity's sake
  
 Remove the code for clicking the knights 
  

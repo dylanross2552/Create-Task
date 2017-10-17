@@ -356,7 +356,7 @@ namespace NOTFireEmblem
                 
             }
         }
-
+        /* Probably not needed now that I think about it...
         public void reset()
         {
             bk1Health = resethealth;
@@ -386,6 +386,7 @@ namespace NOTFireEmblem
             bk3Turn = true;
             TeamTurnLabel.Text = ("It's " + P1Name + "'s turn now!");
         }
+        */
 
         //======================================================================== UI Interaction
         public BattleScreenTestArea()
@@ -432,7 +433,7 @@ namespace NOTFireEmblem
             Close();
             Titlescreen frm1 = new Titlescreen();
             frm1.Visible = true;
-            reset();
+            //reset();
 
         }
 
