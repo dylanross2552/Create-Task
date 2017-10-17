@@ -9,4 +9,5 @@ Have Dylan duplicate the status menus to his window
 Edit the revive and attack functions to switch back to the map screen 
  
 insert a timer to govern the window and speed of events 
- 
+
+Edit the reset function to actually work, otherwise remove it
