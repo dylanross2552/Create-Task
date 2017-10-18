@@ -10,21 +10,13 @@ using System.Windows.Forms;
 
 namespace NOTFireEmblem
 {
-    public static class Variables
-    {
-        public static object unit1;
-        public static object unit2;
-        public static int bk1health;
-        public static int bk2health;
-        public static int bk3health;
-        public static int wk1health;
-        public static int wk2health;
-        public static int wk3health;
-    }
+    
 
 
     public partial class MapForm : Form
     {
+        BattleScreenTestArea battle = new BattleScreenTestArea();
+
         // the "b" and "w" and "bk" and wk" I use in many of my variables represent "black" "white" "black knight" "whiteknight" this is how I keep track of which knight I am using
         //how I detect if one of the knight has been clicked
         public static bool bk1Clicked = false;
@@ -133,6 +125,7 @@ namespace NOTFireEmblem
 
         public void attack()
         {
+            battle.Show();
             if (knightbattle == bk1)
             {
                 bk1moveable = false;
@@ -1283,5 +1276,17 @@ namespace NOTFireEmblem
             }
             deselect.PerformClick();
         }
+    }
+
+    public static class Variables
+    {
+        public static object unit1;
+        public static object unit2;
+        public static int bk1health = 20;
+        public static int bk2health = 20;
+        public static int bk3health = 20;
+        public static int wk1health = 20;
+        public static int wk2health = 20;
+        public static int wk3health = 20;
     }
 }

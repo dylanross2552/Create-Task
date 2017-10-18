@@ -57,8 +57,6 @@ namespace NOTFireEmblem
                 P1Name = P1NameBox.Text;
                 P2Name = P2NameBox.Text;
                 Visible = false;
-                BattleScreenTestArea frm2 = new BattleScreenTestArea();
-                BattleScreenTestArea battle = new BattleScreenTestArea();
                 MapForm map = new MapForm();
                 map.Visible = true;
             }
