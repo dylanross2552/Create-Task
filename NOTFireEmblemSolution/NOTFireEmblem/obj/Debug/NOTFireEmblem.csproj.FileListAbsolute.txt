@@ -33,3 +33,4 @@ C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFir
 C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.Properties.Resources.resources
 C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.csproj.GenerateResource.Cache
 C:\Users\Mullin\Desktop\Alex Mullin\C++\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.MapForm.resources
+C:\Users\Dylan Ross\Desktop\Create-Task\NOTFireEmblemSolution\NOTFireEmblem\obj\Debug\NOTFireEmblem.MapForm.resources
