@@ -436,6 +436,7 @@
             // 
             // Wk1
             // 
+            this.Wk1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Wk1.Image = ((System.Drawing.Image)(resources.GetObject("Wk1.Image")));
             this.Wk1.Location = new System.Drawing.Point(496, 203);
             this.Wk1.Name = "Wk1";
@@ -540,6 +541,7 @@
             // 
             // Wk2
             // 
+            this.Wk2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Wk2.Image = ((System.Drawing.Image)(resources.GetObject("Wk2.Image")));
             this.Wk2.Location = new System.Drawing.Point(496, 269);
             this.Wk2.Name = "Wk2";
@@ -560,6 +562,7 @@
             // 
             // Wk3
             // 
+            this.Wk3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Wk3.Image = ((System.Drawing.Image)(resources.GetObject("Wk3.Image")));
             this.Wk3.Location = new System.Drawing.Point(496, 335);
             this.Wk3.Name = "Wk3";

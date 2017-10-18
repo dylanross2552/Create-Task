@@ -19,13 +19,13 @@ namespace NOTFireEmblem
         public object unit2;
         string unit1Name;
         string unit2Name;
-        int resethealth;
-        int bk1Health;
-        int bk2Health;
-        int bk3Health;
-        int wk1Health;
-        int wk2Health;
-        int wk3Health;
+        public int resethealth;
+        public int bk1Health;
+        public int bk2Health;
+        public int bk3Health;
+        public int wk1Health;
+        public int wk2Health;
+        public int wk3Health;
         int bkTeamKOCount;
         int wkTeamKOCount;
         string placeholderstring; 
@@ -356,7 +356,7 @@ namespace NOTFireEmblem
                 
             }
         }
-
+        /* Probably not needed now that I think about it...
         public void reset()
         {
             bk1Health = resethealth;
@@ -386,6 +386,7 @@ namespace NOTFireEmblem
             bk3Turn = true;
             TeamTurnLabel.Text = ("It's " + P1Name + "'s turn now!");
         }
+        */
 
         //======================================================================== UI Interaction
         public BattleScreenTestArea()
@@ -432,7 +433,7 @@ namespace NOTFireEmblem
             Close();
             Titlescreen frm1 = new Titlescreen();
             frm1.Visible = true;
-            reset();
+            //reset();
 
         }
 
