@@ -1092,36 +1092,6 @@ namespace NOTFireEmblem
             nextspot = label40;
             movement();
         }
-        private void label44_Click(object sender, EventArgs e)
-        {
-            nextspot = label44;
-            movement();
-        }
-        private void label46_Click(object sender, EventArgs e)
-        {
-            nextspot = label46;
-            movement();
-        }
-        private void label48_Click(object sender, EventArgs e)
-        {
-            nextspot = label48;
-            movement();
-        }
-        private void label45_Click(object sender, EventArgs e)
-        {
-            nextspot = label45;
-            movement();
-        }
-        private void label49_Click(object sender, EventArgs e)
-        {
-            nextspot = label49;
-            movement();
-        }
-        private void label47_Click(object sender, EventArgs e)
-        {
-            nextspot = label47;
-            movement();
-        }
         //this is the deselect button
         private void deselect_Click(object sender, EventArgs e)
         {
@@ -1275,6 +1245,16 @@ namespace NOTFireEmblem
                 wk3.BackColor = (Color.Gray);
             }
             deselect.PerformClick();
+        }
+
+        private void label50_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void map_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
