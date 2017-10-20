@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MapForm));
             this.bk3 = new System.Windows.Forms.Label();
             this.bk1 = new System.Windows.Forms.Label();
             this.map = new System.Windows.Forms.TableLayoutPanel();
@@ -82,41 +81,19 @@
             this.deselect = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             this.endturn = new System.Windows.Forms.Button();
-            this.P1ControlPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.P1NameLabel = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.bk1HealthLabel = new System.Windows.Forms.Label();
-            this.bk2HealthLabel = new System.Windows.Forms.Label();
-            this.bk3HealthLabel = new System.Windows.Forms.Label();
-            this.bk1Statuslabel = new System.Windows.Forms.Label();
-            this.bk2Statuslabel = new System.Windows.Forms.Label();
-            this.bk3Statuslabel = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.wk1Statuslabel = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
-            this.P2NameLabel = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.wk1Healthlabel = new System.Windows.Forms.Label();
-            this.wk2Healthlabel = new System.Windows.Forms.Label();
-            this.wk3Healthlabel = new System.Windows.Forms.Label();
-            this.wk2Statuslabel = new System.Windows.Forms.Label();
-            this.wk3Statuslabel = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
             this.map.SuspendLayout();
-            this.P1ControlPanel.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bk3
             // 
             this.bk3.BackColor = System.Drawing.Color.White;
-            this.bk3.Image = ((System.Drawing.Image)(resources.GetObject("bk3.Image")));
             this.bk3.Location = new System.Drawing.Point(1, 306);
             this.bk3.Margin = new System.Windows.Forms.Padding(0);
             this.bk3.Name = "bk3";
@@ -129,7 +106,6 @@
             // 
             this.bk1.BackColor = System.Drawing.Color.White;
             this.bk1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bk1.Image = ((System.Drawing.Image)(resources.GetObject("bk1.Image")));
             this.bk1.Location = new System.Drawing.Point(1, 62);
             this.bk1.Margin = new System.Windows.Forms.Padding(0);
             this.bk1.Name = "bk1";
@@ -152,7 +128,7 @@
             this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.map.Controls.Add(this.bk2, 0, 3);
             this.map.Controls.Add(this.label41, 4, 5);
             this.map.Controls.Add(this.label42, 3, 5);
@@ -202,7 +178,7 @@
             this.map.Controls.Add(this.label21, 0, 4);
             this.map.Controls.Add(this.label5, 2, 1);
             this.map.Controls.Add(this.label16, 1, 1);
-            this.map.Location = new System.Drawing.Point(517, 9);
+            this.map.Location = new System.Drawing.Point(248, 12);
             this.map.Margin = new System.Windows.Forms.Padding(0);
             this.map.Name = "map";
             this.map.RowCount = 7;
@@ -216,13 +192,11 @@
             this.map.Size = new System.Drawing.Size(428, 428);
             this.map.TabIndex = 6;
             this.map.UseWaitCursor = true;
-            this.map.Paint += new System.Windows.Forms.PaintEventHandler(this.map_Paint);
             // 
             // bk2
             // 
             this.bk2.BackColor = System.Drawing.Color.White;
             this.bk2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bk2.Image = ((System.Drawing.Image)(resources.GetObject("bk2.Image")));
             this.bk2.Location = new System.Drawing.Point(1, 184);
             this.bk2.Margin = new System.Windows.Forms.Padding(0);
             this.bk2.Name = "bk2";
@@ -498,7 +472,6 @@
             // wk3
             // 
             this.wk3.BackColor = System.Drawing.Color.Gray;
-            this.wk3.Image = ((System.Drawing.Image)(resources.GetObject("wk3.Image")));
             this.wk3.Location = new System.Drawing.Point(367, 306);
             this.wk3.Margin = new System.Windows.Forms.Padding(0);
             this.wk3.Name = "wk3";
@@ -510,7 +483,6 @@
             // wk2
             // 
             this.wk2.BackColor = System.Drawing.Color.Gray;
-            this.wk2.Image = ((System.Drawing.Image)(resources.GetObject("wk2.Image")));
             this.wk2.Location = new System.Drawing.Point(367, 184);
             this.wk2.Margin = new System.Windows.Forms.Padding(0);
             this.wk2.Name = "wk2";
@@ -522,7 +494,6 @@
             // wk1
             // 
             this.wk1.BackColor = System.Drawing.Color.Gray;
-            this.wk1.Image = ((System.Drawing.Image)(resources.GetObject("wk1.Image")));
             this.wk1.Location = new System.Drawing.Point(367, 62);
             this.wk1.Margin = new System.Windows.Forms.Padding(0);
             this.wk1.Name = "wk1";
@@ -742,7 +713,7 @@
             // 
             // deselect
             // 
-            this.deselect.BackColor = System.Drawing.Color.SteelBlue;
+            this.deselect.BackColor = System.Drawing.Color.Firebrick;
             this.deselect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.deselect.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.deselect.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -751,7 +722,7 @@
             this.deselect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.deselect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deselect.ForeColor = System.Drawing.Color.White;
-            this.deselect.Location = new System.Drawing.Point(6, 4);
+            this.deselect.Location = new System.Drawing.Point(13, 38);
             this.deselect.Name = "deselect";
             this.deselect.Size = new System.Drawing.Size(180, 66);
             this.deselect.TabIndex = 13;
@@ -770,7 +741,7 @@
             this.Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.ForeColor = System.Drawing.Color.White;
-            this.Exit.Location = new System.Drawing.Point(12, 389);
+            this.Exit.Location = new System.Drawing.Point(746, 38);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(165, 66);
             this.Exit.TabIndex = 15;
@@ -789,7 +760,7 @@
             this.endturn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.endturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.endturn.ForeColor = System.Drawing.Color.White;
-            this.endturn.Location = new System.Drawing.Point(192, 4);
+            this.endturn.Location = new System.Drawing.Point(12, 169);
             this.endturn.Name = "endturn";
             this.endturn.Size = new System.Drawing.Size(181, 66);
             this.endturn.TabIndex = 16;
@@ -798,346 +769,80 @@
             this.endturn.UseWaitCursor = true;
             this.endturn.Click += new System.EventHandler(this.endturn_Click);
             // 
-            // P1ControlPanel
-            // 
-            this.P1ControlPanel.BackColor = System.Drawing.Color.White;
-            this.P1ControlPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.P1ControlPanel.ColumnCount = 3;
-            this.P1ControlPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.P1ControlPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.57704F));
-            this.P1ControlPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.34743F));
-            this.P1ControlPanel.Controls.Add(this.label50, 0, 4);
-            this.P1ControlPanel.Controls.Add(this.label51, 0, 3);
-            this.P1ControlPanel.Controls.Add(this.P1NameLabel, 0, 0);
-            this.P1ControlPanel.Controls.Add(this.label52, 0, 2);
-            this.P1ControlPanel.Controls.Add(this.label53, 1, 1);
-            this.P1ControlPanel.Controls.Add(this.label54, 2, 1);
-            this.P1ControlPanel.Controls.Add(this.bk1HealthLabel, 1, 2);
-            this.P1ControlPanel.Controls.Add(this.bk2HealthLabel, 1, 3);
-            this.P1ControlPanel.Controls.Add(this.bk3HealthLabel, 1, 4);
-            this.P1ControlPanel.Controls.Add(this.bk1Statuslabel, 2, 2);
-            this.P1ControlPanel.Controls.Add(this.bk2Statuslabel, 2, 3);
-            this.P1ControlPanel.Controls.Add(this.bk3Statuslabel, 2, 4);
-            this.P1ControlPanel.Location = new System.Drawing.Point(12, 76);
-            this.P1ControlPanel.Name = "P1ControlPanel";
-            this.P1ControlPanel.RowCount = 5;
-            this.P1ControlPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.P1ControlPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.P1ControlPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.P1ControlPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.P1ControlPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.P1ControlPanel.Size = new System.Drawing.Size(332, 139);
-            this.P1ControlPanel.TabIndex = 25;
-            this.P1ControlPanel.UseWaitCursor = true;
-            // 
-            // label50
-            // 
-            this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label50.Location = new System.Drawing.Point(5, 109);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(73, 29);
-            this.label50.TabIndex = 4;
-            this.label50.Text = "Knight3";
-            this.label50.UseWaitCursor = true;
-            // 
-            // label51
-            // 
-            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label51.Location = new System.Drawing.Point(5, 82);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(73, 26);
-            this.label51.TabIndex = 3;
-            this.label51.Text = "Knight2";
-            this.label51.UseWaitCursor = true;
-            // 
-            // P1NameLabel
-            // 
-            this.P1NameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.P1NameLabel.AutoSize = true;
-            this.P1ControlPanel.SetColumnSpan(this.P1NameLabel, 3);
-            this.P1NameLabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.P1NameLabel.Location = new System.Drawing.Point(4, 1);
-            this.P1NameLabel.Name = "P1NameLabel";
-            this.P1NameLabel.Size = new System.Drawing.Size(82, 25);
-            this.P1NameLabel.TabIndex = 1;
-            this.P1NameLabel.Text = "Player1";
-            this.P1NameLabel.UseWaitCursor = true;
-            // 
-            // label52
-            // 
-            this.label52.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label52.Location = new System.Drawing.Point(5, 55);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(73, 26);
-            this.label52.TabIndex = 2;
-            this.label52.Text = "Knight1";
-            this.label52.UseWaitCursor = true;
-            // 
-            // label53
-            // 
-            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label53.Location = new System.Drawing.Point(115, 28);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(66, 25);
-            this.label53.TabIndex = 5;
-            this.label53.Text = "Health";
-            this.label53.UseWaitCursor = true;
-            // 
-            // label54
-            // 
-            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label54.Location = new System.Drawing.Point(240, 28);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(65, 25);
-            this.label54.TabIndex = 6;
-            this.label54.Text = "Status";
-            this.label54.UseWaitCursor = true;
-            // 
-            // bk1HealthLabel
-            // 
-            this.bk1HealthLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bk1HealthLabel.AutoSize = true;
-            this.bk1HealthLabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.bk1HealthLabel.Location = new System.Drawing.Point(136, 55);
-            this.bk1HealthLabel.Name = "bk1HealthLabel";
-            this.bk1HealthLabel.Size = new System.Drawing.Size(24, 25);
-            this.bk1HealthLabel.TabIndex = 7;
-            this.bk1HealthLabel.Text = "X";
-            this.bk1HealthLabel.UseWaitCursor = true;
-            // 
-            // bk2HealthLabel
-            // 
-            this.bk2HealthLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bk2HealthLabel.AutoSize = true;
-            this.bk2HealthLabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.bk2HealthLabel.Location = new System.Drawing.Point(136, 82);
-            this.bk2HealthLabel.Name = "bk2HealthLabel";
-            this.bk2HealthLabel.Size = new System.Drawing.Size(24, 25);
-            this.bk2HealthLabel.TabIndex = 8;
-            this.bk2HealthLabel.Text = "X";
-            this.bk2HealthLabel.UseWaitCursor = true;
-            // 
-            // bk3HealthLabel
-            // 
-            this.bk3HealthLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bk3HealthLabel.AutoSize = true;
-            this.bk3HealthLabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.bk3HealthLabel.Location = new System.Drawing.Point(136, 111);
-            this.bk3HealthLabel.Name = "bk3HealthLabel";
-            this.bk3HealthLabel.Size = new System.Drawing.Size(24, 25);
-            this.bk3HealthLabel.TabIndex = 9;
-            this.bk3HealthLabel.Text = "X";
-            this.bk3HealthLabel.UseWaitCursor = true;
-            // 
-            // bk1Statuslabel
-            // 
-            this.bk1Statuslabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bk1Statuslabel.AutoSize = true;
-            this.bk1Statuslabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.bk1Statuslabel.Location = new System.Drawing.Point(244, 55);
-            this.bk1Statuslabel.Name = "bk1Statuslabel";
-            this.bk1Statuslabel.Size = new System.Drawing.Size(57, 25);
-            this.bk1Statuslabel.TabIndex = 8;
-            this.bk1Statuslabel.Text = "Alive";
-            this.bk1Statuslabel.UseWaitCursor = true;
-            // 
-            // bk2Statuslabel
-            // 
-            this.bk2Statuslabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bk2Statuslabel.AutoSize = true;
-            this.bk2Statuslabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.bk2Statuslabel.Location = new System.Drawing.Point(244, 82);
-            this.bk2Statuslabel.Name = "bk2Statuslabel";
-            this.bk2Statuslabel.Size = new System.Drawing.Size(57, 25);
-            this.bk2Statuslabel.TabIndex = 10;
-            this.bk2Statuslabel.Text = "Alive";
-            this.bk2Statuslabel.UseWaitCursor = true;
-            // 
-            // bk3Statuslabel
-            // 
-            this.bk3Statuslabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bk3Statuslabel.AutoSize = true;
-            this.bk3Statuslabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.bk3Statuslabel.Location = new System.Drawing.Point(244, 111);
-            this.bk3Statuslabel.Name = "bk3Statuslabel";
-            this.bk3Statuslabel.Size = new System.Drawing.Size(57, 25);
-            this.bk3Statuslabel.TabIndex = 11;
-            this.bk3Statuslabel.Text = "Alive";
-            this.bk3Statuslabel.UseWaitCursor = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.57704F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.34743F));
-            this.tableLayoutPanel1.Controls.Add(this.wk1Statuslabel, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label44, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label45, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.P2NameLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label46, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label47, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label48, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.wk1Healthlabel, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.wk2Healthlabel, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.wk3Healthlabel, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.wk2Statuslabel, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.wk3Statuslabel, 2, 4);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 236);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(332, 139);
-            this.tableLayoutPanel1.TabIndex = 26;
-            // 
-            // wk1Statuslabel
-            // 
-            this.wk1Statuslabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.wk1Statuslabel.AutoSize = true;
-            this.wk1Statuslabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.wk1Statuslabel.Location = new System.Drawing.Point(244, 55);
-            this.wk1Statuslabel.Name = "wk1Statuslabel";
-            this.wk1Statuslabel.Size = new System.Drawing.Size(57, 25);
-            this.wk1Statuslabel.TabIndex = 12;
-            this.wk1Statuslabel.Text = "Alive";
-            // 
             // label44
             // 
-            this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label44.Location = new System.Drawing.Point(5, 109);
+            this.label44.BackColor = System.Drawing.Color.White;
+            this.label44.Location = new System.Drawing.Point(792, 135);
+            this.label44.Margin = new System.Windows.Forms.Padding(0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(73, 29);
-            this.label44.TabIndex = 4;
-            this.label44.Text = "Knight3";
+            this.label44.Size = new System.Drawing.Size(60, 60);
+            this.label44.TabIndex = 19;
+            this.label44.UseWaitCursor = true;
+            this.label44.Click += new System.EventHandler(this.label44_Click);
             // 
             // label45
             // 
-            this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label45.Location = new System.Drawing.Point(5, 82);
+            this.label45.BackColor = System.Drawing.Color.White;
+            this.label45.Location = new System.Drawing.Point(717, 203);
+            this.label45.Margin = new System.Windows.Forms.Padding(0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(73, 26);
-            this.label45.TabIndex = 3;
-            this.label45.Text = "Knight2";
-            // 
-            // P2NameLabel
-            // 
-            this.P2NameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.P2NameLabel.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.P2NameLabel, 3);
-            this.P2NameLabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.P2NameLabel.Location = new System.Drawing.Point(4, 1);
-            this.P2NameLabel.Name = "P2NameLabel";
-            this.P2NameLabel.Size = new System.Drawing.Size(82, 25);
-            this.P2NameLabel.TabIndex = 2;
-            this.P2NameLabel.Text = "Player2";
+            this.label45.Size = new System.Drawing.Size(60, 60);
+            this.label45.TabIndex = 20;
+            this.label45.UseWaitCursor = true;
+            this.label45.Click += new System.EventHandler(this.label45_Click);
             // 
             // label46
             // 
-            this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label46.Location = new System.Drawing.Point(5, 55);
+            this.label46.BackColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(717, 135);
+            this.label46.Margin = new System.Windows.Forms.Padding(0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(73, 26);
-            this.label46.TabIndex = 2;
-            this.label46.Text = "Knight1";
+            this.label46.Size = new System.Drawing.Size(60, 60);
+            this.label46.TabIndex = 21;
+            this.label46.UseWaitCursor = true;
+            this.label46.Click += new System.EventHandler(this.label46_Click);
             // 
             // label47
             // 
-            this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label47.Location = new System.Drawing.Point(115, 28);
+            this.label47.BackColor = System.Drawing.Color.White;
+            this.label47.Location = new System.Drawing.Point(865, 203);
+            this.label47.Margin = new System.Windows.Forms.Padding(0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(66, 25);
-            this.label47.TabIndex = 5;
-            this.label47.Text = "Health";
+            this.label47.Size = new System.Drawing.Size(60, 60);
+            this.label47.TabIndex = 22;
+            this.label47.UseWaitCursor = true;
+            this.label47.Click += new System.EventHandler(this.label47_Click);
             // 
             // label48
             // 
-            this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.label48.Location = new System.Drawing.Point(240, 28);
+            this.label48.BackColor = System.Drawing.Color.White;
+            this.label48.Location = new System.Drawing.Point(865, 135);
+            this.label48.Margin = new System.Windows.Forms.Padding(0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(65, 25);
-            this.label48.TabIndex = 6;
-            this.label48.Text = "Status";
+            this.label48.Size = new System.Drawing.Size(60, 60);
+            this.label48.TabIndex = 23;
+            this.label48.UseWaitCursor = true;
+            this.label48.Click += new System.EventHandler(this.label48_Click);
             // 
-            // wk1Healthlabel
+            // label49
             // 
-            this.wk1Healthlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.wk1Healthlabel.AutoSize = true;
-            this.wk1Healthlabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.wk1Healthlabel.Location = new System.Drawing.Point(136, 55);
-            this.wk1Healthlabel.Name = "wk1Healthlabel";
-            this.wk1Healthlabel.Size = new System.Drawing.Size(24, 25);
-            this.wk1Healthlabel.TabIndex = 8;
-            this.wk1Healthlabel.Text = "X";
+            this.label49.BackColor = System.Drawing.Color.White;
+            this.label49.Location = new System.Drawing.Point(792, 203);
+            this.label49.Margin = new System.Windows.Forms.Padding(0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(60, 60);
+            this.label49.TabIndex = 24;
+            this.label49.UseWaitCursor = true;
+            this.label49.Click += new System.EventHandler(this.label49_Click);
             // 
-            // wk2Healthlabel
+            // label50
             // 
-            this.wk2Healthlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.wk2Healthlabel.AutoSize = true;
-            this.wk2Healthlabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.wk2Healthlabel.Location = new System.Drawing.Point(136, 82);
-            this.wk2Healthlabel.Name = "wk2Healthlabel";
-            this.wk2Healthlabel.Size = new System.Drawing.Size(24, 25);
-            this.wk2Healthlabel.TabIndex = 9;
-            this.wk2Healthlabel.Text = "X";
-            // 
-            // wk3Healthlabel
-            // 
-            this.wk3Healthlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.wk3Healthlabel.AutoSize = true;
-            this.wk3Healthlabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.wk3Healthlabel.Location = new System.Drawing.Point(136, 111);
-            this.wk3Healthlabel.Name = "wk3Healthlabel";
-            this.wk3Healthlabel.Size = new System.Drawing.Size(24, 25);
-            this.wk3Healthlabel.TabIndex = 10;
-            this.wk3Healthlabel.Text = "X";
-            // 
-            // wk2Statuslabel
-            // 
-            this.wk2Statuslabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.wk2Statuslabel.AutoSize = true;
-            this.wk2Statuslabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.wk2Statuslabel.Location = new System.Drawing.Point(244, 82);
-            this.wk2Statuslabel.Name = "wk2Statuslabel";
-            this.wk2Statuslabel.Size = new System.Drawing.Size(57, 25);
-            this.wk2Statuslabel.TabIndex = 13;
-            this.wk2Statuslabel.Text = "Alive";
-            // 
-            // wk3Statuslabel
-            // 
-            this.wk3Statuslabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.wk3Statuslabel.AutoSize = true;
-            this.wk3Statuslabel.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic);
-            this.wk3Statuslabel.Location = new System.Drawing.Point(244, 111);
-            this.wk3Statuslabel.Name = "wk3Statuslabel";
-            this.wk3Statuslabel.Size = new System.Drawing.Size(57, 25);
-            this.wk3Statuslabel.TabIndex = 14;
-            this.wk3Statuslabel.Text = "Alive";
+            this.label50.BackColor = System.Drawing.SystemColors.Control;
+            this.label50.Location = new System.Drawing.Point(706, 116);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(219, 161);
+            this.label50.TabIndex = 25;
+            this.label50.UseWaitCursor = true;
             // 
             // MapForm
             // 
@@ -1145,8 +850,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 467);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.P1ControlPanel);
+            this.Controls.Add(this.label50);
+            this.Controls.Add(this.label49);
+            this.Controls.Add(this.label48);
+            this.Controls.Add(this.label47);
+            this.Controls.Add(this.label46);
+            this.Controls.Add(this.label45);
+            this.Controls.Add(this.label44);
             this.Controls.Add(this.endturn);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.deselect);
@@ -1157,10 +867,6 @@
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.map.ResumeLayout(false);
-            this.P1ControlPanel.ResumeLayout(false);
-            this.P1ControlPanel.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1219,32 +925,13 @@
         public System.Windows.Forms.Label bk2;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button endturn;
-        private System.Windows.Forms.TableLayoutPanel P1ControlPanel;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label P1NameLabel;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label bk1HealthLabel;
-        private System.Windows.Forms.Label bk2HealthLabel;
-        private System.Windows.Forms.Label bk3HealthLabel;
-        private System.Windows.Forms.Label bk1Statuslabel;
-        private System.Windows.Forms.Label bk2Statuslabel;
-        private System.Windows.Forms.Label bk3Statuslabel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label wk1Statuslabel;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label P2NameLabel;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label wk1Healthlabel;
-        private System.Windows.Forms.Label wk2Healthlabel;
-        private System.Windows.Forms.Label wk3Healthlabel;
-        private System.Windows.Forms.Label wk2Statuslabel;
-        private System.Windows.Forms.Label wk3Statuslabel;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
     }
 }
 
