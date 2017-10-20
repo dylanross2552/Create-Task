@@ -457,7 +457,7 @@ namespace NOTFireEmblem
 
         //================================================================================= Knight clicks
 
-
+        /* Commented out until needed
         private void Bk1_Click(object sender, EventArgs e)
         {
             if (wasClicked1 == true)
@@ -607,5 +607,6 @@ namespace NOTFireEmblem
                 }
             }
         }
+        */
     }
 }

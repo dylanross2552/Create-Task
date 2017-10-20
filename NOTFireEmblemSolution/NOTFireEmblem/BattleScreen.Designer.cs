@@ -432,7 +432,7 @@
             this.Bk1.Size = new System.Drawing.Size(62, 60);
             this.Bk1.TabIndex = 8;
             this.Bk1.TabStop = false;
-            this.Bk1.Click += new System.EventHandler(this.Bk1_Click);
+            this.Bk1.Visible = false;
             // 
             // Wk1
             // 
@@ -443,7 +443,7 @@
             this.Wk1.Size = new System.Drawing.Size(62, 60);
             this.Wk1.TabIndex = 9;
             this.Wk1.TabStop = false;
-            this.Wk1.Click += new System.EventHandler(this.Wk1_Click);
+            this.Wk1.Visible = false;
             // 
             // TestingButton
             // 
@@ -548,7 +548,6 @@
             this.Wk2.Size = new System.Drawing.Size(62, 60);
             this.Wk2.TabIndex = 14;
             this.Wk2.TabStop = false;
-            this.Wk2.Click += new System.EventHandler(this.Wk2_Click);
             // 
             // Bk2
             // 
@@ -558,7 +557,6 @@
             this.Bk2.Size = new System.Drawing.Size(62, 60);
             this.Bk2.TabIndex = 13;
             this.Bk2.TabStop = false;
-            this.Bk2.Click += new System.EventHandler(this.Bk2_Click);
             // 
             // Wk3
             // 
@@ -569,7 +567,7 @@
             this.Wk3.Size = new System.Drawing.Size(62, 60);
             this.Wk3.TabIndex = 16;
             this.Wk3.TabStop = false;
-            this.Wk3.Click += new System.EventHandler(this.Wk3_Click);
+            this.Wk3.Visible = false;
             // 
             // Bk3
             // 
@@ -579,7 +577,7 @@
             this.Bk3.Size = new System.Drawing.Size(62, 60);
             this.Bk3.TabIndex = 15;
             this.Bk3.TabStop = false;
-            this.Bk3.Click += new System.EventHandler(this.Bk3_Click);
+            this.Bk3.Visible = false;
             // 
             // ServerLabel
             // 
