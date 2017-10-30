@@ -20,12 +20,14 @@ namespace NOTFireEmblem
         string unit1Name;
         string unit2Name;
         public int resethealth;
+        /*
         public int bk1Health;
         public int bk2Health;
         public int bk3Health;
         public int wk1Health;
         public int wk2Health;
         public int wk3Health;
+         */
         int bkTeamKOCount;
         int wkTeamKOCount;
         string placeholderstring; 
@@ -135,44 +137,44 @@ namespace NOTFireEmblem
         {
             if (unit2 == Bk1)
             {
-                bk1Health = Convert.ToInt32(bk1HealthLabel.Text);
-                bk1Health = bk1Health - 5;
-                string bk1Healthstring = Convert.ToString(bk1Health);
+                Variables.bk1health = Convert.ToInt32(bk1HealthLabel.Text);
+                Variables.bk1health = Variables.bk1health - 5;
+                string bk1Healthstring = Convert.ToString(Variables.bk1health);
                 bk1HealthLabel.Text = bk1Healthstring;
             }
             if (unit2 == Bk2)
             {
-                bk2Health = Convert.ToInt32(bk2HealthLabel.Text);
-                bk2Health = bk2Health - 5;
-                string bk2Healthstring = Convert.ToString(bk2Health);
+                Variables.bk2health = Convert.ToInt32(bk2HealthLabel.Text);
+                Variables.bk2health = Variables.bk2health - 5;
+                string bk2Healthstring = Convert.ToString(Variables.bk2health);
                 bk2HealthLabel.Text = bk2Healthstring;
             }
             if (unit2 == Bk3)
             {
-                bk3Health = Convert.ToInt32(bk3HealthLabel.Text);
-                bk3Health = bk3Health - 5;
-                string bk3Healthstring = Convert.ToString(bk3Health);
+                Variables.bk3health = Convert.ToInt32(bk3HealthLabel.Text);
+                Variables.bk3health = Variables.bk3health - 5;
+                string bk3Healthstring = Convert.ToString(Variables.bk3health);
                 bk3HealthLabel.Text = bk3Healthstring;
             }
             if (unit2 == Wk1)
             {
-                wk1Health = Convert.ToInt32(wk1Healthlabel.Text);
-                wk1Health = wk1Health - 5;
-                string wk1Healthstring = Convert.ToString(wk1Health);
+                Variables.wk1health = Convert.ToInt32(wk1Healthlabel.Text);
+                Variables.wk1health = Variables.wk1health - 5;
+                string wk1Healthstring = Convert.ToString(Variables.wk1health);
                 wk1Healthlabel.Text = wk1Healthstring;
             }
             if (unit2 == Wk2)
             {
-                wk2Health = Convert.ToInt32(wk2Healthlabel.Text);
-                wk2Health = wk2Health - 5;
-                string wk2Healthstring = Convert.ToString(wk2Health);
+                Variables.wk2health = Convert.ToInt32(wk2Healthlabel.Text);
+                Variables.wk2health = Variables.wk2health - 5;
+                string wk2Healthstring = Convert.ToString(Variables.wk2health);
                 wk2Healthlabel.Text = wk2Healthstring;
             }
             if (unit2 == Wk3)
             {
-                wk3Health = Convert.ToInt32(wk3Healthlabel.Text);
-                wk3Health = wk3Health - 5;
-                string wk3Healthstring = Convert.ToString(wk3Health);
+                Variables.wk3health = Convert.ToInt32(wk3Healthlabel.Text);
+                Variables.wk3health = Variables.wk3health - 5;
+                string wk3Healthstring = Convert.ToString(Variables.wk3health);
                 wk3Healthlabel.Text = wk3Healthstring;
             }
         }
@@ -184,8 +186,8 @@ namespace NOTFireEmblem
             {
                 if (bk1Statuslabel.Text == placeholderstring)
                 {
-                    bk1Health = bk1Health + 10;
-                    bk1HealthLabel.Text = Convert.ToString(bk1Health);
+                    Variables.bk1health = Variables.bk1health + 10;
+                    bk1HealthLabel.Text = Convert.ToString(Variables.bk1health);
                     bk1Statuslabel.Text = ("Alive(?)");
                     TestResultLabel.Text = (unit1Name + " has resuscitated " + unit2Name + "!");
                 }
@@ -200,8 +202,8 @@ namespace NOTFireEmblem
 
                 if (bk2Statuslabel.Text == placeholderstring)
                 {
-                    bk2Health = bk2Health + 10;
-                    bk2HealthLabel.Text = Convert.ToString(bk2Health);
+                    Variables.bk2health = Variables.bk2health + 10;
+                    bk2HealthLabel.Text = Convert.ToString(Variables.bk2health);
                     bk2Statuslabel.Text = ("Alive(?)");
                     TestResultLabel.Text = (unit1Name + " has resuscitated " + unit2Name + "!");
                 }
@@ -216,8 +218,8 @@ namespace NOTFireEmblem
 
                 if (bk3Statuslabel.Text == placeholderstring)
                 {
-                    bk3Health = bk3Health + 10;
-                    bk3HealthLabel.Text = Convert.ToString(bk3Health);
+                    Variables.bk3health = Variables.bk3health + 10;
+                    bk3HealthLabel.Text = Convert.ToString(Variables.bk3health);
                     bk3Statuslabel.Text = ("Alive(?)");
                     TestResultLabel.Text = (unit1Name + " has resuscitated " + unit2Name + "!");
                 }
@@ -231,8 +233,8 @@ namespace NOTFireEmblem
 
                 if (wk1Statuslabel.Text == placeholderstring)
                 {
-                    wk1Health = wk1Health + 10;
-                    wk1Healthlabel.Text = Convert.ToString(wk1Health);
+                    Variables.wk1health = Variables.wk1health + 10;
+                    wk1Healthlabel.Text = Convert.ToString(Variables.wk1health);
                     wk1Statuslabel.Text = ("Alive(?)");
                     TestResultLabel.Text = (unit1Name + " has resuscitated " + unit2Name + "!");
                 }
@@ -247,8 +249,8 @@ namespace NOTFireEmblem
 
                 if (wk2Statuslabel.Text == placeholderstring)
                 {
-                    wk2Health = wk2Health + 10;
-                    wk2Healthlabel.Text = Convert.ToString(wk2Health);
+                    Variables.wk2health = Variables.wk2health + 10;
+                    wk2Healthlabel.Text = Convert.ToString(Variables.wk2health);
                     wk2Statuslabel.Text = ("Alive(?)");
                     TestResultLabel.Text = (unit1Name + " has resuscitated " + unit2Name + "!");
                 }
@@ -262,8 +264,8 @@ namespace NOTFireEmblem
 
                 if (wk3Statuslabel.Text == placeholderstring)
                 {
-                    wk3Health = wk3Health + 10;
-                    wk3Healthlabel.Text = Convert.ToString(wk3Health);
+                    Variables.wk3health = Variables.wk3health + 10;
+                    wk3Healthlabel.Text = Convert.ToString(Variables.wk3health);
                     wk3Statuslabel.Text = ("Alive(?)");
                     TestResultLabel.Text = (unit1Name + " has resuscitated " + unit2Name + "!");
                 }
@@ -279,44 +281,44 @@ namespace NOTFireEmblem
         {
             bkTeamKOCount = 0;
             wkTeamKOCount = 0;
-            bk1Health = Convert.ToInt32(bk1HealthLabel.Text);
-            bk2Health = Convert.ToInt32(bk2HealthLabel.Text);
-            bk3Health = Convert.ToInt32(bk3HealthLabel.Text);
-            wk1Health = Convert.ToInt32(wk1Healthlabel.Text);
-            wk2Health = Convert.ToInt32(wk2Healthlabel.Text);
-            wk3Health = Convert.ToInt32(wk3Healthlabel.Text);
+            Variables.bk1health = Convert.ToInt32(bk1HealthLabel.Text);
+            Variables.bk2health = Convert.ToInt32(bk2HealthLabel.Text);
+            Variables.bk3health = Convert.ToInt32(bk3HealthLabel.Text);
+            Variables.wk1health = Convert.ToInt32(wk1Healthlabel.Text);
+            Variables.wk2health = Convert.ToInt32(wk2Healthlabel.Text);
+            Variables.wk3health = Convert.ToInt32(wk3Healthlabel.Text);
 
-            if (bk1Health <= 0)
+            if (Variables.bk1health <= 0)
             {
                 bk1Turn = false;
                 bk1Statuslabel.Text = ("Not Alive");
                 bkTeamKOCount = bkTeamKOCount + 1;
             }
-            if (bk2Health <= 0)
+            if (Variables.bk2health <= 0)
             {
                 bk2Turn = false;
                 bk2Statuslabel.Text = ("Not Alive");
                 bkTeamKOCount = bkTeamKOCount + 1;
             }
-            if (bk3Health <= 0)
+            if (Variables.bk3health <= 0)
             {
                 bk3Turn = false;
                 bk3Statuslabel.Text = ("Not Alive");
                 bkTeamKOCount = bkTeamKOCount + 1;
             }
-            if (wk1Health <= 0)
+            if (Variables.wk1health <= 0)
             {
                 wk1Turn = false;
                 wk1Statuslabel.Text = ("Not Alive");
                 wkTeamKOCount = wkTeamKOCount + 1;
             }
-            if (wk2Health <= 0)
+            if (Variables.wk2health <= 0)
             {
                 wk2Turn = false;
                 wk2Statuslabel.Text = ("Not Alive");
                 wkTeamKOCount = wkTeamKOCount + 1;
             }
-            if (wk3Health <= 0)
+            if (Variables.wk3health <= 0)
             {
                 wk3Turn = false;
                 wk3Statuslabel.Text = ("Not Alive");
@@ -400,9 +402,9 @@ namespace NOTFireEmblem
             wk1Healthlabel.Text = ServerLabel.Text;
             wk2Healthlabel.Text = ServerLabel.Text;
                 //makes unit2 a vanguard
-                wk2Health = Convert.ToInt32(wk2Healthlabel.Text);
-                wk2Health = wk2Health + 5;
-                placeholderint = wk2Health;
+                Variables.wk2health = Convert.ToInt32(wk2Healthlabel.Text);
+                Variables.wk2health = Variables.wk2health + 5;
+                placeholderint = Variables.wk2health;
                 wk2Healthlabel.Text = Convert.ToString(placeholderint);
             wk3Healthlabel.Text = ServerLabel.Text;
             bk2Turn = false;
@@ -454,6 +456,11 @@ namespace NOTFireEmblem
             revive();
         }
 
+        public void BacktoForm2Button_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            battlemap.Show();
+        }
 
         //================================================================================= Knight clicks
 

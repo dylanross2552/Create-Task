@@ -71,6 +71,7 @@
             this.Bk3 = new System.Windows.Forms.PictureBox();
             this.ServerLabel = new System.Windows.Forms.Label();
             this.TeamTurnLabel = new System.Windows.Forms.Label();
+            this.BacktoForm2Button = new System.Windows.Forms.Button();
             this.P1ControlPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Bk1)).BeginInit();
@@ -599,12 +600,24 @@
             this.TeamTurnLabel.TabIndex = 18;
             this.TeamTurnLabel.Text = "TeamTurnHere";
             // 
+            // BacktoForm2Button
+            // 
+            this.BacktoForm2Button.Location = new System.Drawing.Point(375, 33);
+            this.BacktoForm2Button.Name = "BacktoForm2Button";
+            this.BacktoForm2Button.Size = new System.Drawing.Size(111, 23);
+            this.BacktoForm2Button.TabIndex = 19;
+            this.BacktoForm2Button.Text = "To map";
+            this.BacktoForm2Button.UseVisualStyleBackColor = true;
+            this.BacktoForm2Button.Visible = false;
+            this.BacktoForm2Button.Click += new System.EventHandler(this.BacktoForm2Button_Click);
+            // 
             // BattleScreenTestArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 655);
             this.ControlBox = false;
+            this.Controls.Add(this.BacktoForm2Button);
             this.Controls.Add(this.TeamTurnLabel);
             this.Controls.Add(this.ServerLabel);
             this.Controls.Add(this.Wk3);
@@ -685,5 +698,6 @@
         private System.Windows.Forms.Label ServerLabel;
         private System.Windows.Forms.Button ReviveButton;
         private System.Windows.Forms.Label TeamTurnLabel;
+        public System.Windows.Forms.Button BacktoForm2Button;
     }
 }

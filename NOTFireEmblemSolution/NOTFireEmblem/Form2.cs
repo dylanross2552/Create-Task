@@ -10,9 +10,13 @@ using System.Windows.Forms;
 
 namespace NOTFireEmblem
 {
+    
+
 
     public partial class MapForm : Form
     {
+        BattleScreenTestArea battle = new BattleScreenTestArea();
+
         // the "b" and "w" and "bk" and wk" I use in many of my variables represent "black" "white" "black knight" "whiteknight" this is how I keep track of which knight I am using
         //how I detect if one of the knight has been clicked
         public static bool bk1Clicked = false;
@@ -22,7 +26,7 @@ namespace NOTFireEmblem
         public static bool wk2Clicked = false;
         public static bool wk3Clicked = false;
         //the variable i created so I could refer to any knight with one variable based on the one I clicked, used in the "highlight" method
-        public static bool knightClicked;   
+        public static bool knightClicked;
         //this is the boolean that will define whether or not I can click and do something with them. how I do turns and make sure I can only move them once per turn
         public static bool bk1moveable = true;
         public static bool bk2moveable = true;
@@ -46,7 +50,7 @@ namespace NOTFireEmblem
         //this is the variable I assign to whatever label is clicked and then use that in the movement method
         public static Control nextspot;
         public static Control labelnum;
-
+        public static int knighthealth;
 
         public MapForm()
         {
@@ -55,7 +59,7 @@ namespace NOTFireEmblem
 // controls the movement of the knights after they have been clicked
         public void movement()
         {
-            
+
             //nextspot is assigned when I click a label. when I click a knight it highlights all the squares it can move to 
             //in blue, so if a label is clicked, and is highlighted blue, then it goes through with the movement
             if (nextspot.BackColor == (Color.Blue))
@@ -121,40 +125,55 @@ namespace NOTFireEmblem
 
         public void attack()
         {
+            battle.Show();
             if (knightbattle == bk1)
             {
                 bk1moveable = false;
-                bk1alive = false;
+                knighthealth = Variables.bk1health;
+                if (Variables.bk1health <= 0)
+                {
+                    bk1alive = false;
+                }
             }
             if (knightbattle == bk2)
             {
                 bk2moveable = false;
+                knighthealth = Variables.bk2health;
                 bk2alive = false;
             }
             if (knightbattle == bk3)
             {
                 bk3moveable = false;
+                knighthealth = Variables.bk3health;
                 bk3alive = false;
             }
             if (knightbattle == wk1)
             {
                 wk1moveable = false;
+                knighthealth = Variables.wk1health;
                 wk1alive = false;
             }
             if (knightbattle == wk2)
             {
                 wk2moveable = false;
+                knighthealth = Variables.wk2health;
                 wk2alive = false;
             }
             if (knightbattle == wk3)
             {
                 wk3moveable = false;
+                knighthealth = Variables.wk3health;
                 wk3alive = false;
             }
-            var col = map.GetColumn(knightbattle);
-            var row = map.GetRow(knightbattle);
-            map.Controls.Remove(knightbattle);
-            map.Controls.Add(labelnum, col, row);
+
+            if (knighthealth <= 0)
+            {
+                var col = map.GetColumn(knightbattle);
+                var row = map.GetRow(knightbattle);
+                map.Controls.Remove(knightbattle);
+                map.Controls.Add(labelnum, col, row);
+            }
+
             if (knighthigh == bk1)
             {
                 bk1moveable = false;
@@ -653,6 +672,7 @@ namespace NOTFireEmblem
             bk1Clicked = true;
             if (bk1.BackColor == (Color.Red))
             {
+                Variables.unit2 = bk1;
                 labelnum = label44;
                 knightbattle = bk1;
                 bk1moveable = false;
@@ -664,6 +684,7 @@ namespace NOTFireEmblem
                 //checks if it is selected then uses the highlight method to change all adjacent squares to blue
                 if (bk1Clicked == true)
                 {
+                    Variables.unit1 = bk1;
                     highlight();
                 }
             }
@@ -678,6 +699,7 @@ namespace NOTFireEmblem
             bk2Clicked = true;
             if (bk2.BackColor == (Color.Red))
             {
+                Variables.unit2 = bk2;
                 labelnum = label45;
                 knightbattle = bk2;
                 bk2moveable = false;
@@ -687,6 +709,7 @@ namespace NOTFireEmblem
             {
                 if (bk2Clicked == true)
                 {
+                    Variables.unit1 = bk2;
                     highlight();
                 }
             }
@@ -705,6 +728,7 @@ namespace NOTFireEmblem
             bk3Clicked = true;
             if (bk3.BackColor == (Color.Red))
             {
+                Variables.unit2 = bk3;
                 labelnum = label46;
                 knightbattle = bk3;
                 bk3moveable = false;
@@ -714,6 +738,7 @@ namespace NOTFireEmblem
             {
                 if (bk3Clicked == true)
                 {
+                    Variables.unit1 = bk3;
                     highlight();
                 }
             }
@@ -732,6 +757,7 @@ namespace NOTFireEmblem
             wk1Clicked = true;
             if (wk1.BackColor == (Color.Red))
             {
+                Variables.unit2 = wk1;
                 labelnum = label47;
                 knightbattle = wk1;
                 wk1moveable = false;
@@ -741,6 +767,7 @@ namespace NOTFireEmblem
             {
                 if (wk1Clicked == true)
                 {
+                    Variables.unit1 = wk1;
                     highlight();
                 }
             }
@@ -759,6 +786,7 @@ namespace NOTFireEmblem
             wk2Clicked = true;
             if (wk2.BackColor == (Color.Red))
             {
+                Variables.unit2 = wk2;
                 labelnum = label48;
                 knightbattle = wk2;
                 wk2moveable = false;
@@ -768,6 +796,7 @@ namespace NOTFireEmblem
             {
                 if (wk2Clicked == true)
                 {
+                    Variables.unit1 = wk2;
                     highlight();
                 }
             }
@@ -786,6 +815,7 @@ namespace NOTFireEmblem
             wk3Clicked = true;
             if (wk3.BackColor == (Color.Red))
             {
+                Variables.unit2 = wk3;
                 labelnum = label49;
                 knightbattle = wk3;
                 wk3moveable = false;
@@ -795,6 +825,7 @@ namespace NOTFireEmblem
             {
                 if (wk3Clicked == true)
                 {
+                    Variables.unit1 = wk3;
                     highlight();
                 }
             }
@@ -1061,36 +1092,6 @@ namespace NOTFireEmblem
             nextspot = label40;
             movement();
         }
-        private void label44_Click(object sender, EventArgs e)
-        {
-            nextspot = label44;
-            movement();
-        }
-        private void label46_Click(object sender, EventArgs e)
-        {
-            nextspot = label46;
-            movement();
-        }
-        private void label48_Click(object sender, EventArgs e)
-        {
-            nextspot = label48;
-            movement();
-        }
-        private void label45_Click(object sender, EventArgs e)
-        {
-            nextspot = label45;
-            movement();
-        }
-        private void label49_Click(object sender, EventArgs e)
-        {
-            nextspot = label49;
-            movement();
-        }
-        private void label47_Click(object sender, EventArgs e)
-        {
-            nextspot = label47;
-            movement();
-        }
         //this is the deselect button
         private void deselect_Click(object sender, EventArgs e)
         {
@@ -1245,5 +1246,34 @@ namespace NOTFireEmblem
             }
             deselect.PerformClick();
         }
+
+        private void label50_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void map_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form2ToBattleButton_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            battle.Show();
+            map.Show();
+        }
+    }
+
+    public static class Variables
+    {
+        public static object unit1;
+        public static object unit2;
+        public static int bk1health = 20;
+        public static int bk2health = 20;
+        public static int bk3health = 20;
+        public static int wk1health = 20;
+        public static int wk2health = 20;
+        public static int wk3health = 20;
     }
 }

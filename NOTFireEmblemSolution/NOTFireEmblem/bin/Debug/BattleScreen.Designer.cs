@@ -71,6 +71,8 @@
             this.Bk3 = new System.Windows.Forms.PictureBox();
             this.ServerLabel = new System.Windows.Forms.Label();
             this.TeamTurnLabel = new System.Windows.Forms.Label();
+            this.BacktoForm2Button = new System.Windows.Forms.Button();
+            this.BattleVisibleButton = new System.Windows.Forms.Button();
             this.P1ControlPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Bk1)).BeginInit();
@@ -432,7 +434,7 @@
             this.Bk1.Size = new System.Drawing.Size(62, 60);
             this.Bk1.TabIndex = 8;
             this.Bk1.TabStop = false;
-            this.Bk1.Click += new System.EventHandler(this.Bk1_Click);
+            this.Bk1.Visible = false;
             // 
             // Wk1
             // 
@@ -443,7 +445,7 @@
             this.Wk1.Size = new System.Drawing.Size(62, 60);
             this.Wk1.TabIndex = 9;
             this.Wk1.TabStop = false;
-            this.Wk1.Click += new System.EventHandler(this.Wk1_Click);
+            this.Wk1.Visible = false;
             // 
             // TestingButton
             // 
@@ -548,7 +550,6 @@
             this.Wk2.Size = new System.Drawing.Size(62, 60);
             this.Wk2.TabIndex = 14;
             this.Wk2.TabStop = false;
-            this.Wk2.Click += new System.EventHandler(this.Wk2_Click);
             // 
             // Bk2
             // 
@@ -558,7 +559,6 @@
             this.Bk2.Size = new System.Drawing.Size(62, 60);
             this.Bk2.TabIndex = 13;
             this.Bk2.TabStop = false;
-            this.Bk2.Click += new System.EventHandler(this.Bk2_Click);
             // 
             // Wk3
             // 
@@ -569,7 +569,7 @@
             this.Wk3.Size = new System.Drawing.Size(62, 60);
             this.Wk3.TabIndex = 16;
             this.Wk3.TabStop = false;
-            this.Wk3.Click += new System.EventHandler(this.Wk3_Click);
+            this.Wk3.Visible = false;
             // 
             // Bk3
             // 
@@ -579,7 +579,7 @@
             this.Bk3.Size = new System.Drawing.Size(62, 60);
             this.Bk3.TabIndex = 15;
             this.Bk3.TabStop = false;
-            this.Bk3.Click += new System.EventHandler(this.Bk3_Click);
+            this.Bk3.Visible = false;
             // 
             // ServerLabel
             // 
@@ -601,12 +601,35 @@
             this.TeamTurnLabel.TabIndex = 18;
             this.TeamTurnLabel.Text = "TeamTurnHere";
             // 
+            // BacktoForm2Button
+            // 
+            this.BacktoForm2Button.Location = new System.Drawing.Point(375, 12);
+            this.BacktoForm2Button.Name = "BacktoForm2Button";
+            this.BacktoForm2Button.Size = new System.Drawing.Size(111, 23);
+            this.BacktoForm2Button.TabIndex = 19;
+            this.BacktoForm2Button.Text = "To map";
+            this.BacktoForm2Button.UseVisualStyleBackColor = true;
+            this.BacktoForm2Button.Visible = false;
+            this.BacktoForm2Button.Click += new System.EventHandler(this.BacktoForm2Button_Click);
+            // 
+            // BattleVisibleButton
+            // 
+            this.BattleVisibleButton.Location = new System.Drawing.Point(375, 43);
+            this.BattleVisibleButton.Name = "BattleVisibleButton";
+            this.BattleVisibleButton.Size = new System.Drawing.Size(111, 23);
+            this.BattleVisibleButton.TabIndex = 20;
+            this.BattleVisibleButton.Text = "To battle";
+            this.BattleVisibleButton.UseVisualStyleBackColor = true;
+            this.BattleVisibleButton.Click += new System.EventHandler(this.BattleVisibleButton_Click);
+            // 
             // BattleScreenTestArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 655);
             this.ControlBox = false;
+            this.Controls.Add(this.BattleVisibleButton);
+            this.Controls.Add(this.BacktoForm2Button);
             this.Controls.Add(this.TeamTurnLabel);
             this.Controls.Add(this.ServerLabel);
             this.Controls.Add(this.Wk3);
@@ -687,5 +710,7 @@
         private System.Windows.Forms.Label ServerLabel;
         private System.Windows.Forms.Button ReviveButton;
         private System.Windows.Forms.Label TeamTurnLabel;
+        public System.Windows.Forms.Button BacktoForm2Button;
+        public System.Windows.Forms.Button BattleVisibleButton;
     }
 }
