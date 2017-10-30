@@ -38,6 +38,7 @@ namespace NOTFireEmblem
         public static bool wk1Turn = false;
         public static bool wk2Turn = false;
         public static bool wk3Turn = false;
+        public object opener;
 
 
         //=====================================================================UI Functions
@@ -394,22 +395,7 @@ namespace NOTFireEmblem
         public BattleScreenTestArea()
         {
             InitializeComponent();
-            //Sets the starting values of the match
-            int resethealth = Convert.ToInt32(ServerLabel.Text);
-            bk1HealthLabel.Text = ServerLabel.Text;
-            bk2HealthLabel.Text = ServerLabel.Text;
-            bk3HealthLabel.Text = ServerLabel.Text;
-            wk1Healthlabel.Text = ServerLabel.Text;
-            wk2Healthlabel.Text = ServerLabel.Text;
-                //makes unit2 a vanguard
-                Variables.wk2health = Convert.ToInt32(wk2Healthlabel.Text);
-                Variables.wk2health = Variables.wk2health + 5;
-                placeholderint = Variables.wk2health;
-                wk2Healthlabel.Text = Convert.ToString(placeholderint);
-            wk3Healthlabel.Text = ServerLabel.Text;
-            bk2Turn = false;
-            TeamTurnLabel.Text = ("It's " + P1Name + "'s turn now!");
-            TeamTurnLabel.Visible = true;
+            Titlescreen ownerform = null;
         }
 
         private void BattleScreen_Load(object sender, EventArgs e)
@@ -432,9 +418,8 @@ namespace NOTFireEmblem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
-            Titlescreen frm1 = new Titlescreen();
-            frm1.Visible = true;
+            Visible = false;
+            this.ToTitle.Show();
             //reset();
 
         }
@@ -458,9 +443,12 @@ namespace NOTFireEmblem
 
         public void BacktoForm2Button_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            battlemap.Show();
+            Visible = false;
+            this.ToMap.Show();
+
         }
+        public Form ToMap { get; set; }
+        public Form ToTitle { get; set; }
 
         //================================================================================= Knight clicks
 

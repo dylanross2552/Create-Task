@@ -72,7 +72,6 @@
             this.ServerLabel = new System.Windows.Forms.Label();
             this.TeamTurnLabel = new System.Windows.Forms.Label();
             this.BacktoForm2Button = new System.Windows.Forms.Button();
-            this.BattleVisibleButton = new System.Windows.Forms.Button();
             this.P1ControlPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Bk1)).BeginInit();
@@ -603,24 +602,13 @@
             // 
             // BacktoForm2Button
             // 
-            this.BacktoForm2Button.Location = new System.Drawing.Point(375, 12);
+            this.BacktoForm2Button.Location = new System.Drawing.Point(375, 33);
             this.BacktoForm2Button.Name = "BacktoForm2Button";
             this.BacktoForm2Button.Size = new System.Drawing.Size(111, 23);
             this.BacktoForm2Button.TabIndex = 19;
             this.BacktoForm2Button.Text = "To map";
             this.BacktoForm2Button.UseVisualStyleBackColor = true;
-            this.BacktoForm2Button.Visible = false;
             this.BacktoForm2Button.Click += new System.EventHandler(this.BacktoForm2Button_Click);
-            // 
-            // BattleVisibleButton
-            // 
-            this.BattleVisibleButton.Location = new System.Drawing.Point(375, 43);
-            this.BattleVisibleButton.Name = "BattleVisibleButton";
-            this.BattleVisibleButton.Size = new System.Drawing.Size(111, 23);
-            this.BattleVisibleButton.TabIndex = 20;
-            this.BattleVisibleButton.Text = "To battle";
-            this.BattleVisibleButton.UseVisualStyleBackColor = true;
-            this.BattleVisibleButton.Click += new System.EventHandler(this.BattleVisibleButton_Click);
             // 
             // BattleScreenTestArea
             // 
@@ -628,7 +616,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 655);
             this.ControlBox = false;
-            this.Controls.Add(this.BattleVisibleButton);
             this.Controls.Add(this.BacktoForm2Button);
             this.Controls.Add(this.TeamTurnLabel);
             this.Controls.Add(this.ServerLabel);
@@ -711,6 +698,5 @@
         private System.Windows.Forms.Button ReviveButton;
         private System.Windows.Forms.Label TeamTurnLabel;
         public System.Windows.Forms.Button BacktoForm2Button;
-        public System.Windows.Forms.Button BattleVisibleButton;
     }
 }

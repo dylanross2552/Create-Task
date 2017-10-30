@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MapForm));
             this.bk3 = new System.Windows.Forms.Label();
             this.bk1 = new System.Windows.Forms.Label();
             this.map = new System.Windows.Forms.TableLayoutPanel();
@@ -39,6 +40,7 @@
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -49,7 +51,6 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -117,6 +118,7 @@
             // bk3
             // 
             this.bk3.BackColor = System.Drawing.Color.White;
+            this.bk3.Image = ((System.Drawing.Image)(resources.GetObject("bk3.Image")));
             this.bk3.Location = new System.Drawing.Point(1, 306);
             this.bk3.Margin = new System.Windows.Forms.Padding(0);
             this.bk3.Name = "bk3";
@@ -129,6 +131,7 @@
             // 
             this.bk1.BackColor = System.Drawing.Color.White;
             this.bk1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bk1.Image = ((System.Drawing.Image)(resources.GetObject("bk1.Image")));
             this.bk1.Location = new System.Drawing.Point(1, 62);
             this.bk1.Margin = new System.Windows.Forms.Padding(0);
             this.bk1.Name = "bk1";
@@ -151,7 +154,7 @@
             this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
+            this.map.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
             this.map.Controls.Add(this.bk2, 0, 3);
             this.map.Controls.Add(this.label41, 4, 5);
             this.map.Controls.Add(this.label42, 3, 5);
@@ -160,6 +163,7 @@
             this.map.Controls.Add(this.label35, 3, 4);
             this.map.Controls.Add(this.label36, 2, 4);
             this.map.Controls.Add(this.label37, 3, 6);
+            this.map.Controls.Add(this.label28, 0, 6);
             this.map.Controls.Add(this.label38, 4, 6);
             this.map.Controls.Add(this.label17, 5, 2);
             this.map.Controls.Add(this.label39, 5, 6);
@@ -170,7 +174,6 @@
             this.map.Controls.Add(this.label27, 2, 3);
             this.map.Controls.Add(this.label29, 1, 3);
             this.map.Controls.Add(this.label40, 6, 6);
-            this.map.Controls.Add(this.label28, 0, 6);
             this.map.Controls.Add(this.label22, 4, 4);
             this.map.Controls.Add(this.label23, 5, 4);
             this.map.Controls.Add(this.label24, 6, 4);
@@ -221,6 +224,7 @@
             // 
             this.bk2.BackColor = System.Drawing.Color.White;
             this.bk2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bk2.Image = ((System.Drawing.Image)(resources.GetObject("bk2.Image")));
             this.bk2.Location = new System.Drawing.Point(1, 184);
             this.bk2.Margin = new System.Windows.Forms.Padding(0);
             this.bk2.Name = "bk2";
@@ -305,6 +309,17 @@
             this.label37.TabIndex = 25;
             this.label37.UseWaitCursor = true;
             this.label37.Click += new System.EventHandler(this.label37_Click);
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(1, 367);
+            this.label28.Margin = new System.Windows.Forms.Padding(0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(60, 60);
+            this.label28.TabIndex = 16;
+            this.label28.UseWaitCursor = true;
+            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // label38
             // 
@@ -416,17 +431,6 @@
             this.label40.UseWaitCursor = true;
             this.label40.Click += new System.EventHandler(this.label40_Click);
             // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(1, 367);
-            this.label28.Margin = new System.Windows.Forms.Padding(0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 60);
-            this.label28.TabIndex = 16;
-            this.label28.UseWaitCursor = true;
-            this.label28.Click += new System.EventHandler(this.label28_Click);
-            // 
             // label22
             // 
             this.label22.BackColor = System.Drawing.Color.White;
@@ -496,6 +500,7 @@
             // wk3
             // 
             this.wk3.BackColor = System.Drawing.Color.Gray;
+            this.wk3.Image = ((System.Drawing.Image)(resources.GetObject("wk3.Image")));
             this.wk3.Location = new System.Drawing.Point(367, 306);
             this.wk3.Margin = new System.Windows.Forms.Padding(0);
             this.wk3.Name = "wk3";
@@ -507,6 +512,7 @@
             // wk2
             // 
             this.wk2.BackColor = System.Drawing.Color.Gray;
+            this.wk2.Image = ((System.Drawing.Image)(resources.GetObject("wk2.Image")));
             this.wk2.Location = new System.Drawing.Point(367, 184);
             this.wk2.Margin = new System.Windows.Forms.Padding(0);
             this.wk2.Name = "wk2";
@@ -518,6 +524,7 @@
             // wk1
             // 
             this.wk1.BackColor = System.Drawing.Color.Gray;
+            this.wk1.Image = ((System.Drawing.Image)(resources.GetObject("wk1.Image")));
             this.wk1.Location = new System.Drawing.Point(367, 62);
             this.wk1.Margin = new System.Windows.Forms.Padding(0);
             this.wk1.Name = "wk1";
@@ -824,6 +831,7 @@
             this.P1ControlPanel.Size = new System.Drawing.Size(332, 139);
             this.P1ControlPanel.TabIndex = 25;
             this.P1ControlPanel.UseWaitCursor = true;
+            this.P1ControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.P1ControlPanel_Paint);
             // 
             // label50
             // 
@@ -1001,6 +1009,7 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(332, 139);
             this.tableLayoutPanel1.TabIndex = 26;
             this.tableLayoutPanel1.UseWaitCursor = true;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // wk1Statuslabel
             // 

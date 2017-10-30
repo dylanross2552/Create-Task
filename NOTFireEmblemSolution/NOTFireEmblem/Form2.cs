@@ -16,6 +16,7 @@ namespace NOTFireEmblem
     public partial class MapForm : Form
     {
         BattleScreenTestArea battle = new BattleScreenTestArea();
+        public object opnener;
 
         // the "b" and "w" and "bk" and wk" I use in many of my variables represent "black" "white" "black knight" "whiteknight" this is how I keep track of which knight I am using
         //how I detect if one of the knight has been clicked
@@ -272,6 +273,8 @@ namespace NOTFireEmblem
         private void Form1_Load(object sender, EventArgs e)
         {
             BattleScreenTestArea frm2 = new BattleScreenTestArea();
+            P1NameLabel.Text = Titlescreen.P1Name;
+            P2NameLabel.Text = Titlescreen.P2Name;
         }
 
         public void highlight()
@@ -1259,9 +1262,19 @@ namespace NOTFireEmblem
 
         private void Form2ToBattleButton_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            Visible = false;
             battle.Show();
-            map.Show();
+            battle.ToMap = this;
+        }
+
+        private void P1ControlPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
@@ -1276,4 +1289,6 @@ namespace NOTFireEmblem
         public static int wk2health = 20;
         public static int wk3health = 20;
     }
+
+
 }

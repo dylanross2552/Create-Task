@@ -23,14 +23,19 @@ namespace NOTFireEmblem
 
         public static string P1Name;
         public static string P2Name;
+        MapForm battlemap = new MapForm();
+        BattleScreenTestArea battle = new BattleScreenTestArea();
+
+
         public Titlescreen()
         {
             InitializeComponent();
         }
 
+
         public void Titlescreen_Load(object sender, EventArgs e)
         {
-
+            Titlescreen title = this;
         }
 
         public void StartButton_Click(object sender, EventArgs e)
@@ -54,12 +59,12 @@ namespace NOTFireEmblem
             }
             else
             {
+                Titlescreen title = this;
                 P1Name = P1NameBox.Text;
                 P2Name = P2NameBox.Text;
                 Visible = false;
-                var battle = new BattleScreenTestArea();
-                var battlemap = new MapForm();
-                battlemap.Visible = true;
+                battle.ToTitle = title;
+                battlemap.Show();
             }
         }
         private void ExitButton_Click_1(object sender, EventArgs e)

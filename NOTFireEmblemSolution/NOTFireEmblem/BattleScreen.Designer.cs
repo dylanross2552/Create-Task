@@ -608,7 +608,6 @@
             this.BacktoForm2Button.TabIndex = 19;
             this.BacktoForm2Button.Text = "To map";
             this.BacktoForm2Button.UseVisualStyleBackColor = true;
-            this.BacktoForm2Button.Visible = false;
             this.BacktoForm2Button.Click += new System.EventHandler(this.BacktoForm2Button_Click);
             // 
             // BattleScreenTestArea
@@ -632,6 +631,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.P1ControlPanel);
+            this.Enabled = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BattleScreenTestArea";
